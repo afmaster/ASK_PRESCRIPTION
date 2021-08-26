@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Solicitação de Receitas YOUR NAME HERE</title>
+    <meta name="description" content="YOUR DESCRIPTION HERE">
+    <meta name="author" content="your name here">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+
+</head>
+
+<body>
+    <br/>
+
+	<form action="YOUR POST SERVICE HERE" method="post">
+    <div class="container">
+        <div class="form-row">
+
+        	<div class="form-group col-md-4">
+                <label>Nome Completo</label>
+                <input id="nome" name="nome" type="text" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Sexo</label>
+                <br/>
+                <select id="cars" name="cars" required>
+                  <option value=" "> </option>
+                  <option value="Masculino">Masculino</option>
+                  <option value="Feminino">Feminino</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>CPF</label>
+                <input id="cpf" name="cpf" type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');" required>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label>CEP</label>
+                <input id="cep" name="cep" type="text" class="form-control" onkeypress="$(this).mask('00.000-000')" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label>Endereço completo</label>
+                <input id="endereco" name="endereco" type="text" class="form-control" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label>Bairro</label>
+                <input id="bairro" name="bairro" type="text" class="form-control" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label>Cidade</label>
+                <input id="cidade" name="cidade" type="text" class="form-control" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+
+          	<div class="form-group col-md-4">
+            	<label>E-mail</label>
+            	<input id="email" name="email" type="email" class="form-control" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+        	<div class="form-group col-md-4">
+                <label>Medicação</label>
+                <input id="medicacao" name="medicacao" type="text" class="form-control" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label>Dose (mg)</label>
+                <input id="dose" name="dose" type="text" class="form-control" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label>Quantidade de comprimidos por dia</label>
+                <input id="quantidade" name="quantidade" type="text" class="form-control" required>
+            </div>
+        </div>
+
+            <br/>
+
+
+            <div>
+            <button>Enviar Pedido</button>
+            </div>
+            <br/>
+            <br/>
+
+        </div>
+    </div>
+    </form>
+</body>
+</html>
